@@ -15,6 +15,7 @@
   --team-bg-cl: #F5F4FA;
   --project-item-cl: #EEEEEE;
   --hero-bg-cl: #C4C4C4;
+  --socials-cl: #AFB1B8;
 }
 
 body {
@@ -325,8 +326,8 @@ color: var(--accent-cl);
 
 .team-item {
   flex-basis: calc((100% - 2 * 30px) / 3);
+  
   background: var(--main-bg-cl);
-
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
   0px 1px 1px rgba(0, 0, 0, 0.14),
   0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -356,6 +357,39 @@ color: var(--accent-cl);
   font-weight: 500;
   color: var(--secondary-cl);
 }
+
+.team-socials-list {
+  display: flex;
+  justify-content: center;
+  width: 206px;
+  height: 44px;
+  margin: 16px auto 0;
+}
+
+.team-socials-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.team-socials-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  color: var(--socials-cl);
+}
+
+.team-socials-link:hover,
+.team-socials-link:focus {
+  border-radius: 50px;
+  background-color: var(--accent-cl);
+  color: var(--main-bg-cl);
+}
+
+.team-socials-icon {
+  fill: currentColor;
+}
+
 /* блок main - index.hmtl (end) */
 
 /* блок footer (start) */
@@ -396,6 +430,8 @@ color: var(--accent-cl);
 .filter-item:not(:last-child) {
   margin-right: 8px;
 }
+
+
 
 .filter-btn {
   padding: 6px 22px;
