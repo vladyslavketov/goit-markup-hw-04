@@ -157,11 +157,16 @@ color: var(--accent-cl);
 }
 
 .header-contacts-item:not(:last-child) {
- margin-right: 50px;
+ margin-right: 30px;
+}
+
+.header-contacts-item:hover {
+  color: var(--accent-cl);
 }
 
 .header-contacts-link {
-  display: block;
+  display: inline-flex;
+  align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -169,6 +174,13 @@ color: var(--accent-cl);
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--main-cl);
+}
+
+.header-tel-icon,
+.header-mail-icon {
+  margin-right: 10px;
+
+  fill: currentColor;
 }
 
 .header-contacts-link:hover,
@@ -252,32 +264,19 @@ color: var(--accent-cl);
   max-width: 270px;
 }
 
-.features-item::before {
-  content: '';
-  display: block;
+.features-icon-wrap {
+  width: 270px;
   height: 120px;
+  padding: 25px 100px;
   margin-bottom: 30px;
 
+  background: var(--team-bg-cl);
   border-radius: 4px;
-  background-color: var(--team-bg-cl);
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
-.features-item:nth-child(1)::before {
-  background-image: url(../images/antenna\ 1.svg);
-}
-
-.features-item:nth-child(2)::before {
-  background-image: url(../images/clock\ 1.svg);
-}
-
-.features-item:nth-child(3)::before {
-  background-image: url(../images/diagram\ 1.svg);
-}
-
-.features-item:nth-child(4)::before {
-  background-image: url(../images/astronaut\ 1.svg);
+.features-icon {
+  width: 70px;
+  height: 70px;
 }
 
 .features-name {
