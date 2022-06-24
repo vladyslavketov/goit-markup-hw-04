@@ -16,6 +16,7 @@
   --project-item-cl: #EEEEEE;
   --hero-bg-cl: #C4C4C4;
   --socials-cl: #AFB1B8;
+  --footer-icon-bg-cl: rgba(255, 255, 255, 0.1);
 }
 
 body {
@@ -296,7 +297,8 @@ color: var(--accent-cl);
 }
 
 .direction-title,
-.team-title {
+.team-title,
+.clients-title {
   margin-bottom: 50px;
 
   font-weight: 700;
@@ -366,7 +368,8 @@ color: var(--accent-cl);
   margin: 16px auto 0;
 }
 
-.team-socials-item:not(:last-child) {
+.team-socials-item:not(:last-child),
+.footer-socials-item:not(:last-child) {
   margin-right: 10px;
 }
 
@@ -390,6 +393,40 @@ color: var(--accent-cl);
   fill: currentColor;
 }
 
+/* секція clients / постоянные клиенты */
+.clients-list {
+  display: flex;
+}
+
+.clients-item {
+  padding: 16px 32px;
+
+  border: 1px solid var(--socials-cl);
+  border-radius: 4px;
+}
+
+.clients-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.clients-link {
+  color: var(--socials-cl);
+}
+
+.clients-link:hover,
+.clients-link:focus {
+  color: var(--accent-cl);
+}
+
+.clients-item:hover,
+.clients-item:focus {
+  color: var(--accent-cl);
+  border: 1px solid var(--accent-cl);
+}
+
+.clients-icon {
+  fill: currentColor;
+}
 /* блок main - index.hmtl (end) */
 
 /* блок footer (start) */
@@ -398,6 +435,14 @@ color: var(--accent-cl);
   background-color: var(--footer-bg-cl);
 }
 
+.footer-box-wrap {
+  display: flex;
+}
+
+.footer-box-2 {
+  margin-left: 70px;
+  padding-top: 12px;
+}
 /* контакти */
 .footer-contacts-item:not(:last-child){
   margin-bottom: 9px;
@@ -417,6 +462,47 @@ color: var(--accent-cl);
   font-style: normal;
   color: var(--main-bg-cl);
 }
+
+.footer-box-title {
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--main-bg-cl);
+}
+
+.footer-socials-list {
+  display: flex;
+  justify-content: center;
+  width: 206px;
+  height: 44px;
+  margin-top: 20px;
+}
+
+.footer-socials-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.footer-socials-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  color: var(--socials-cl);
+  border-radius: 50px;
+  background-color: var(--footer-icon-bg-cl);
+}
+
+.footer-socials-link:hover,
+.footer-socials-link:focus {
+  background-color: var(--accent-cl);
+  color: var(--main-bg-cl);
+}
+
+.footer-socials-icon {
+  fill: currentColor;
+}
+
 /* блок footer (end) */
 
 /* блок main - portfolio.hmtl (start) */
@@ -430,8 +516,6 @@ color: var(--accent-cl);
 .filter-item:not(:last-child) {
   margin-right: 8px;
 }
-
-
 
 .filter-btn {
   padding: 6px 22px;
