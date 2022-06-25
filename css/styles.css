@@ -267,9 +267,11 @@ color: var(--accent-cl);
 }
 
 .features-icon-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 270px;
   height: 120px;
-  padding: 25px 100px;
   margin-bottom: 30px;
 
   background: var(--team-bg-cl);
@@ -368,6 +370,11 @@ color: var(--accent-cl);
   margin: 16px auto 0;
 }
 
+.team-socials-item {
+  width: 44px;
+  height: 44px;
+}
+
 .team-socials-item:not(:last-child),
 .footer-socials-item:not(:last-child) {
   margin-right: 10px;
@@ -377,8 +384,8 @@ color: var(--accent-cl);
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 44px;
-  height: 44px;
+  width: 100%;
+  height: 100%;
   color: var(--socials-cl);
 }
 
@@ -399,10 +406,8 @@ color: var(--accent-cl);
 }
 
 .clients-item {
-  padding: 16px 32px;
-
-  border: 1px solid var(--socials-cl);
-  border-radius: 4px;
+  width: 170px;
+  height: 92px;
 }
 
 .clients-item:not(:last-child) {
@@ -410,16 +415,20 @@ color: var(--accent-cl);
 }
 
 .clients-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+
   color: var(--socials-cl);
+  border: 1px solid var(--socials-cl);
+  border-radius: 4px;
 }
 
 .clients-link:hover,
 .clients-link:focus {
   color: var(--accent-cl);
-}
-
-.clients-item:hover,
-.clients-item:focus {
   color: var(--accent-cl);
   border: 1px solid var(--accent-cl);
 }
@@ -437,12 +446,13 @@ color: var(--accent-cl);
 
 .footer-box-wrap {
   display: flex;
+  align-items: baseline;
 }
 
 .footer-box-2 {
   margin-left: 70px;
-  padding-top: 12px;
 }
+
 /* контакти */
 .footer-contacts-item:not(:last-child){
   margin-bottom: 9px;
@@ -488,7 +498,7 @@ color: var(--accent-cl);
   align-items: center;
   width: 44px;
   height: 44px;
-  color: var(--socials-cl);
+  color: var(--main-bg-cl);
   border-radius: 50px;
   background-color: var(--footer-icon-bg-cl);
 }
@@ -562,7 +572,12 @@ color: var(--accent-cl);
   margin-bottom: 0px;
 }
 
-.project-item:hover {
+.project-link {
+ display: block;
+}
+
+.project-link:hover,
+.project-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
     0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -588,5 +603,6 @@ color: var(--accent-cl);
 .project-tag {
   font-size: 16px;
   line-height: 1.88;
+  color: var(--main-cl);
 }
 /* блок main - portfolio.hmtl (end) */
